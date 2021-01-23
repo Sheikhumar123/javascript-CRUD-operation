@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, h1{
+    color: teal;
+    font-family: serif;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.table-box{
+    width: 80%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 40px 10px rgba(128, 128, 128, 0.13);
+}
+.table-box .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table-box .header .left{
+    width: 30%;
+}
+.table-box .header .right{
+    color: gray;
+    padding-right: 10px;
+}
+.table-box .header .left h3{
+    margin: 10px 5px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table-box .header .left button{
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: teal;
+}
+#table{
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+#table thead{
+    color: white;
+    text-align: left;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#table tbody{
+    color: #222;
+    text-align: left;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#table thead th{
+    box-shadow: 0px 0px 5px 0px rgb(128, 128, 128) inset;
+}
+#table thead th, #table tbody td{
+    padding: 8px;
+    border-radius: 3px;
+}
+/* form */
+.input-form{
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 50px;
+    display: none;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #222;
+    transform: translate(-50% , -50%);
+    box-shadow: 0px 0px 10px 5px rgba(37, 30, 30, 0.24);
+}
+.input-form label{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-form input , .input-form select{
+    border: none;
+    padding: 5px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-left: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+.input-form button{
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: teal;
+}
+#close{
+    top: 15px;
+    right: 20px;
+    color: red; 
+    font-size: 1.2rem;
+    font-family: Arial;
+    position: absolute;
+    font-weight: bolder;
+    text-decoration: none; 
+}

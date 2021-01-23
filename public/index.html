@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+
+        <div class="table-box">
+            
+            <div class="header">
+                <div class="left">
+                    <h3>Tasks</h3>
+                    <button id="new">New</button>
+                </div>
+                <div class="right">
+                    <p>Click on table headings to sort data.</p>
+                </div>
+            </div>
+
+            <table id="table" cellspacing="2">
+                <thead>
+                    <th>Title</th>
+                    <th>Priority</th>
+                    <th>Due</th>
+                    <th>Notes</th>
+                    <th colspan="2">Completed</th>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>Meeting with mark</td>
+                        <td>High</td>
+                        <td>2021-1-21</td>
+                        <td>HS</td>
+                        <td>False</td>
+                        <td><a href="#" onclick="showForm(true,event)">Edit</a> | <a href="#" onclick="deleteRow(event)">Delete</a></td>
+                    </tr> -->
+                </tbody>
+            </table>    
+        </div>
+
+    </div>
+    
+    <div class="input-form">
+        <a href="#" id="close">X</a>
+        <label>
+            Title
+            <input type="text" id="title" placeholder="Enter Title here">
+        </label>
+        <label>
+            Due Date
+            <input type="date" id="date">
+        </label>
+        <label>
+            Notes
+            <input type="text" id="notes" placeholder="Some notes...">
+        </label>
+        <label>
+            Priority
+            <select name="priority" id="priority">
+                <option value="High">High</option>
+                <option value="low">Low</option>
+            </select>
+        </label>
+        <label>
+            Completed 
+            <select name="Completed" id="Completed">
+                <option value="False">False</option>
+                <option value="True">True</option>
+            </select>
+        </label>
+        <button id="save">Generate</button>
+        <button id="update">Update</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
